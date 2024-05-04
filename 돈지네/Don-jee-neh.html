@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>돈지네</title>
+    <!-- 스타일 -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1px ;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        nav a:hover {
+            color: #ddd;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        #reload-Button {
+            margin-left: 1350px;
+            position: relative;
+            top: -150px;
+        }
+
+        #reload-Text {
+            margin-left: 1350px;
+            position: relative;
+            top: -150px;
+        }
+
+        #manu-Text {
+            font-size: 20px;
+            text-align: center;
+            position: relative;
+            top: 50px;
+            padding-bottom: 20px; /* 하단 여백 추가 */
+        }
+
+        .reload-button {
+            background-color: #4e504e;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 32px;
+            border: 5px solid white;
+            outline: none;
+            transition: background-color 0.3s;
+            width: 100px;
+            height: 50px;
+        }
+
+        .reload-button:hover {
+            background-color: #323232;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    <!-- 스타일 -->
+</head>
+<body>
+    <!-- 메뉴 글씨 -->
+    <header>
+        <div id="manu-Text">
+            <h1>돈지네<br>마을</h1>
+        </div>
+    </header>
+    <!-- 메뉴 글씨 -->
+
+    <!-- 리로드 버튼 -->
+    <header>
+        <div id="reload-Text">
+            <h2>리로드 버튼</h2>
+        </div>
+        <div id="reload-Button">
+            <button class="reload-button" onclick="reloadPage()">↻</button>
+        </div>
+    </header>
+    <!-- 리로드 버튼 -->
+
+    <!-- 메뉴 -->
+    <nav>
+        <a href="Don-jee-neh.html">홈</a>
+        <a href="logo.html">로고</a>
+    </nav>
+    <!-- 메뉴 -->
+
+    <section id="home">
+    </section>
+
+    <!-- JavaScript 코드 -->
+    <script>
+        function reloadPage() {
+            location.reload();
+        }
+    </script>
+    <!-- JavaScript 코드 -->
+
+    <!-- footer -->
+    <footer>
+        <p>&copy; 2024 돈지네</p>
+    </footer>
+    <!-- footer -->
+</body>
+</html>
